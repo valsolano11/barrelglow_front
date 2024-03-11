@@ -1,0 +1,90 @@
+.verdetalle {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 20%;
+  background-color: var(--color3);
+  border: 1px solid var(--color1);
+  border-radius: 20px;
+}
+
+.verdetalle img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+  border: 1px solid var(--color1);
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.informacion {
+  flex: 1;
+  padding: 20px;
+  color: var(--color1);
+}
+.informacion .titulo-1 {
+  color: var(--color1);
+}
+
+.descripcion-detalle li {
+  list-style-type: none;
+}
+
+.botones-detalle {
+  display: flex;
+}
+.boton-1 {
+  padding: 10px 10px;
+  background-color: var(--color2);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.boton-1 a {
+  text-decoration: none;
+  color: var(--color3);
+}
+.boton-1:hover {
+  transform: scale(1.05);
+  background-color: var(--color1);
+}
+
+.boton-2 {
+  padding: 10px 10px;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.boton-2 a {
+  text-decoration: none;
+  color: var(--color1);
+}
+.boton-2:hover {
+  transform: scale(1.05);
+  background-color: var(--color1);
+}
+
+.titulito h1 {
+  text-align: center;
+}
+
+.card-detalle {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .verdetalle {
+    flex-direction: column;
+    align-items: center;
+  }
+}

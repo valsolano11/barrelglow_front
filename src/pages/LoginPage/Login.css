@@ -1,0 +1,122 @@
+@import url(../../components/variables.css);
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.login-box {
+  background-color: var(--color5);
+  border-radius: 20px;
+  padding: 1% 4%;
+  text-align: center;
+}
+
+.login-box h1 {
+  margin-bottom: 15%;
+}
+
+.input-group-login {
+  margin-top: 7%;
+}
+
+.input-field-login {
+  padding: 4% 10%;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.button-login {
+  margin-top: 10%;
+  margin-bottom: 7%;
+  border: none;
+  padding: 10px 20%;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: var(--color4);
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+}
+
+.button-login:hover {
+  background-color: var(--color7);
+}
+
+.text-login {
+  margin-top: 3%;
+}
+
+.text-login a {
+  text-decoration: none;
+  color: var(--color3);
+  transition: all 0.4s ease-in-out;
+}
+
+.text-login a:hover {
+  color: var(--color6);
+  border-bottom: 1px solid var(--color6);
+}
+
+@media screen and (min-width: 967px) and (max-width: 1310px) {
+  .login-container {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 967px) {
+  .login-container {
+    margin-top: 10%;
+  }
+
+  .login-box h1 {
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
+
+  .input-field-login {
+    font-size: 13px;
+  }
+
+  .button-login {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 4% 18%;
+    font-size: 12px;
+  }
+
+  .text-login {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .login-container {
+    margin-top: 10%;
+  }
+
+  .login-box h1 {
+    margin-bottom: 10%;
+    font-size: 30px;
+  }
+
+  .input-field-login {
+    font-size: 13px;
+  }
+
+  .button-login {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 4% 18%;
+    font-size: 12px;
+  }
+
+  .text-login {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+}

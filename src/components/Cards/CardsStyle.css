@@ -1,0 +1,65 @@
+@import url(../variables.css);
+
+.container-cards {
+    max-width: 100%;
+    padding: 30px 55px;
+    margin: 2% 5%;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+  }
+
+/*   Diseño responsive de las cards */
+
+  @media screen and (min-width: 967px) and (max-width: 1254px) {
+    .container-cards {
+      padding: 20px 35px;
+      margin: 2% 3%;
+    }
+    
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 40px 24px;
+    }
+  }
+  
+  @media screen and (min-width: 670px) and (max-width: 967px) {
+    .container-cards {
+      padding: 20px 35px;
+      margin: 2% 3%;
+    }
+    
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 40px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 670px) {
+    .container-cards {
+      padding: 20px 35px;
+      margin: 2% 3%;
+    }
+    
+    .cards {
+      margin-left: 6%;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 20px 10px;
+    }
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 600px) {
+    .container-cards {
+      padding: 20px 35px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px 0px;
+    }
+  }
