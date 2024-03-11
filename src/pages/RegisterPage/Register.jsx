@@ -28,7 +28,7 @@ function Register() {
         throw new Error("Ingresa una dirección de correo electrónico válida.");
       }
   
-      const response = await fetch("http://localhost:7000/registro", {
+      const response = await fetch("https://barrelglow-api.onrender.com/registro", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

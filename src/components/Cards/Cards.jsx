@@ -10,7 +10,8 @@ function Cards() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await axios.get("http://localhost:7000/productos");
+        const response = await axios.get("https://barrelglow-api.onrender.com/productos");
+        
         setProductos(response.data);
         console.log(response.data);
       } catch (error) {
@@ -28,21 +29,6 @@ function Cards() {
     : [];
 
   const pageNumbers = Math.ceil(productos.length / itemsPerPage);
-
-  // const [imageUrl, setImageUrl] = useState('');
-
-  //   useEffect(() => {
-  //     const fetchImageUrl = async () => {
-  //       try {
-  //         const response = await axios.post('http://localhost:7000/productos');
-  //         setImageUrl(response.data.imageUrl); // Suponiendo que el servidor devuelve la URL de la imagen
-  //       } catch (error) {
-  //         console.error('Error al obtener la imagen:', error);
-  //       }
-  //     };
-  //     fetchImageUrl();
-  //   }, []);
-
   return (
     <div className="container-cards">
       <div className="cards">

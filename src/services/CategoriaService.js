@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:7000/categorias";
+const BASE_URL = "https://barrelglow-api.onrender.com/categorias";
 
 const Categorias = {
   getCategorias: async () => {

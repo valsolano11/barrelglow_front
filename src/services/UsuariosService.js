@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:7000/usuarios";
+const BASE_URL = "https://barrelglow-api.onrender.com/usuarios";
 
 const Users = {
   getUsers: async (token) => {

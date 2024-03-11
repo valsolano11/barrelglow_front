@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:7000/proveedores";
+const BASE_URL = "https://barrelglow-api.onrender.com/proveedores";
 
 const ProveedoresService = {
   getProveedores: async () => {

@@ -13,7 +13,7 @@ function Card({ producto }) {
     <div className="Card">
       <div className="container-img">
         <img
-          src={`http://localhost:7000/imagen/${producto.image}`}
+          src={`https://barrelglow-api.onrender.com/imagen/${producto.image}`}
           alt="upload"
         />
         <div className="overlay">
